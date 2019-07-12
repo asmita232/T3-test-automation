@@ -113,7 +113,7 @@ test_cases = browser.find_elements_by_xpath("//tr[@class='x-grid-row x-grid-tree
 print(test_cases)
 
 curr_date_time = datetime.now()
-filename = "_" + curr_date_time.strftime("%d-%m-%Y_%H:%M:%S") + ".txt"
+filename = curr_date_time.strftime("%d-%m-%Y_%H-%M") + ".txt"
 
 result = open(filename,'w+')
 for i in test_cases:
